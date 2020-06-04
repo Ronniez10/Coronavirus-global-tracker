@@ -1,7 +1,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title>Coronavirus Tracker Application</title>
+    <title>COVID-19 Tracker</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
@@ -10,7 +10,9 @@
 
 <div class="container">
 
-<h1>Coronavirus Tracker Application</h1>
+<img src="../images/image.png">
+
+<h1>COVID-19 Tracker</h1>
 <p>The Total  Coronavirus Cases across the World state wise are shown below:</p>
 
 <div class="jumbotron">
@@ -33,6 +35,8 @@
         <th>Changes Since Last Day</th>
     </tr>
     </thead>
+
+
     <tbody>
     <tr th:each="coronaStat : ${coronaStats}">
         <td th:text="${coronaStat.state}"></td>
@@ -41,7 +45,12 @@
         <td th:text="${coronaStat.diffFromPreviousDay}">0</td>
     </tr>
     </tbody>
+
+
 </table>
+
+
+
 </div>
 
 </body>
