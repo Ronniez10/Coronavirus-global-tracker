@@ -13,5 +13,5 @@ localhost:8080
 
 ## IMAGES
 
-![](images/Capture.JPG)  
-![](images/Products.JPG)
+![](images/snip1.JPG)  
+![](images/snip2.JPG)
